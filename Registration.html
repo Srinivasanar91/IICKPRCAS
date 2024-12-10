@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Hackathon Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #005bb5;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+         /* Navigation Bar */
+         nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003a75;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #005bb5;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #005bb5;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #003a75;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Internal Hackathon Registration</h1>
+    <p>Innov-a-Thon - KPRCAS Special</p>
+</header>
+<nav>
+    <a href="Srinivasan.html">Home</a>
+    <a href="Srinivasan.html">Reports</a>
+</nav>
+
+<main>
+    
+    <h2>Register Now</h2>
+    <form action="https://forms.gle/spwxerzbohKxA5j98" method="post">
+        <!-- Participant Information -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="">-- Select Your Department --</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Computer Science with Data Analytics">CSDA</option>
+            <option value="Computer Science with AI&ML">AIML</option>
+            <option value="Computer Science with AI&DS">AIDS</option>
+            <option value="Information Technology">IT</option>
+            <option value="Computer Technology">BCA</option>
+            <option value="BCA">AIML</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="team-size">Team Size</label>
+        <input type="number" id="team-size" name="team_size" placeholder="Enter number of team members" min="1" max="6" required>
+
+        <!-- Hackathon Details -->
+        <label for="idea">Project Idea/Description</label>
+        <textarea id="idea" name="idea" placeholder="Briefly describe your project idea" rows="4" required></textarea>
+
+        <label for="city">City</label>
+        <select id="city" name="city" required>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Tiruppur">Tiruppur</option>
+            <option value="Erode">Erode</option>
+            <option value="Salem">Salem</option>
+        </select>
+
+        <!-- Submission -->
+        <button type="submit">Submit Registration</button>
+    </form>
+</main>
+
+</body>
+</html>
